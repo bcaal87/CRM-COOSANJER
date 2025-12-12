@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8" />
+    <title>CRM COOSANJER</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    />
+
+
+<style>
+  body { background-color:#f4f6f9; }
+  .kpi-card { border-radius:14px; box-shadow:0 4px 14px rgba(0,0,0,0.06); }
+  footer { margin-top:40px; padding:20px 0; font-size:.85rem; color:#6c757d; }
+</style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#004a6f;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="crm-index.html">
+      <strong>COOSANJER R.L.</strong> – CRM
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#crmNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="crmNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="crm-index.html">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="crm-leads.html">Leads</a></li>
+        <li class="nav-item"><a class="nav-link" href="crm-prospectos.html">Prospectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="crm-oportunidades.html">Oportunidades</a></li>
+        <li class="nav-item"><a class="nav-link" href="crm-cliente-360.html">Asociados 360</a></li>
+        <li class="nav-item"><a class="nav-link" href="crm-campanas.html">Campañas</a></li>
+        <li class="nav-item"><a class="nav-link" href="crm-reportes.html">Reportes</a></li>
+      </ul>
+      <span class="navbar-text ms-3">
+        Usuario: <strong>admin.crm</strong>
+      </span>
+    </div>
+  </div>
+</nav>
+
+<div class="container my-4">
+  <div class="d-flex justify-content-between align-items-center mb-2">
+    <div>
+      <h3 class="mb-0">Prospecto: Juan Pérez</h3>
+      <small class="text-muted">DPI: 1234567890101 · Segmento: Empleado formal</small>
+    </div>
+    <button class="btn btn-success btn-sm">Convertir en asociado</button>
+  </div>
+
+  <div class="row g-3 mb-3">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h6 class="text-muted mb-1">Estado del prospecto</h6>
+          <p class="mb-1"><span class="badge bg-info text-dark">En seguimiento</span></p>
+          <small>Ejecutivo: Ana Morales</small><br/>
+          <small>Origen: Feria de empleo 2026</small><br/>
+          <small>Primer contacto: 01/03/2026</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h6 class="text-muted mb-1">Interés principal</h6>
+          <p class="mb-1">Crédito consumo · Monto estimado: Q 25,000</p>
+          <small>Canal: Presencial en agencia Cobán</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h6 class="text-muted mb-1">Resumen de oportunidades</h6>
+          <p class="mb-1">Oportunidades abiertas: <strong>1</strong></p>
+          <p class="mb-0">Último estado: <span class="badge bg-warning text-dark">En análisis</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ul class="nav nav-tabs mb-3">
+    <li class="nav-item">
+      <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-datos">Datos</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-oportunidades">Oportunidades</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-interacciones">Interacciones</button>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane fade show active" id="tab-datos">
+      <div class="card">
+        <div class="card-body">
+          <h6>Datos personales</h6>
+          <div class="row small">
+            <div class="col-md-4">
+              <strong>Nombre:</strong> Juan Pérez<br/>
+              <strong>Teléfono:</strong> 5555-1234<br/>
+              <strong>Email:</strong> juan.perez@example.com<br/>
+            </div>
+            <div class="col-md-4">
+              <strong>Dirección:</strong> Cobán, Alta Verapaz<br/>
+              <strong>Ocupación:</strong> Empleado privado<br/>
+              <strong>Ingreso mensual:</strong> Q 4,500
+            </div>
+            <div class="col-md-4">
+              <strong>Agencia preferente:</strong> Cobán<br/>
+              <strong>Canal de origen:</strong> Feria de empleo<br/>
+              <strong>Campaña:</strong> Jóvenes profesionales
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="tab-oportunidades">
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex justify-content-between mb-2">
+            <h6 class="mb-0">Oportunidades</h6>
+            <button class="btn btn-primary btn-sm">+ Crear oportunidad</button>
+          </div>
+          <div class="table-responsive small mb-0">
+            <table class="table table-sm align-middle mb-0">
+              <thead class="table-light">
+                <tr>
+                  <th>Tipo producto</th>
+                  <th>Monto</th>
+                  <th>Estado</th>
+                  <th>Fecha creación</th>
+                  <th>Ejecutivo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Crédito consumo</td>
+                  <td>Q 25,000</td>
+                  <td><span class="badge bg-warning text-dark">En análisis</span></td>
+                  <td>01/03/2026</td>
+                  <td>Ana Morales</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="tab-interacciones">
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex justify-content-between mb-2">
+            <h6 class="mb-0">Interacciones</h6>
+            <button class="btn btn-outline-primary btn-sm">+ Registrar interacción</button>
+          </div>
+          <ul class="list-group list-group-flush small">
+            <li class="list-group-item">
+              02/03/2026 10:15 – <strong>Llamada</strong> – Se explica requisitos de crédito.
+            </li>
+            <li class="list-group-item">
+              01/03/2026 16:30 – <strong>Visita agencia</strong> – Se completa formulario de solicitud.
+            </li>
+            <li class="list-group-item">
+              01/03/2026 11:00 – <strong>Contacto inicial</strong> en Feria de empleo.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="text-center">
+  <div class="container">
+    <span>CRM COOSANJER – Mockup Prospecto Detalle</span>
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

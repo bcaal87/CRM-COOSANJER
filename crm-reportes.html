@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8" />
+    <title>CRM COOSANJER</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    />
+
+
+<style>
+  body { background-color:#f4f6f9; }
+  .kpi-card { border-radius:14px; box-shadow:0 4px 14px rgba(0,0,0,0.06); }
+  footer { margin-top:40px; padding:20px 0; font-size:.85rem; color:#6c757d; }
+</style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#004a6f;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="crm-index.html">
+      <strong>COOSANJER R.L.</strong> – CRM
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#crmNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="crmNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="crm-index.html">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="crm-leads.html">Leads</a></li>
+        <li class="nav-item"><a class="nav-link" href="crm-prospectos.html">Prospectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="crm-oportunidades.html">Oportunidades</a></li>
+        <li class="nav-item"><a class="nav-link" href="crm-cliente-360.html">Asociados 360</a></li>
+        <li class="nav-item"><a class="nav-link" href="crm-campanas.html">Campañas</a></li>
+        <li class="nav-item"><a class="nav-link" href="crm-reportes.html">Reportes</a></li>
+      </ul>
+      <span class="navbar-text ms-3">
+        Usuario: <strong>admin.crm</strong>
+      </span>
+    </div>
+  </div>
+</nav>
+
+<div class="container my-4">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <div>
+      <h3 class="mb-0">Reportes y KPIs</h3>
+      <small class="text-muted">Indicadores clave del embudo de conversión.</small>
+    </div>
+    <button class="btn btn-outline-secondary btn-sm">Exportar dashboard</button>
+  </div>
+
+  <div class="row g-3 mb-3">
+    <div class="col-md-4">
+      <div class="card kpi-card">
+        <div class="card-body">
+          <h6 class="text-muted mb-1">Lead → Prospecto</h6>
+          <h3 class="mb-0">58%</h3>
+          <small class="text-muted">Tasa de conversión general</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card kpi-card">
+        <div class="card-body">
+          <h6 class="text-muted mb-1">Prospecto → Asociado</h6>
+          <h3 class="mb-0">32%</h3>
+          <small class="text-muted">En los últimos 90 días</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card kpi-card">
+        <div class="card-body">
+          <h6 class="text-muted mb-1">Asociados con producto</h6>
+          <h3 class="mb-0">87%</h3>
+          <small class="text-muted">Al menos 1 producto activo</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      Embudo consolidado por canal (ejemplo estático)
+    </div>
+    <div class="card-body">
+      <div class="table-responsive small mb-0">
+        <table class="table table-sm align-middle mb-0">
+          <thead class="table-light">
+            <tr>
+              <th>Canal</th>
+              <th>Leads</th>
+              <th>Prospectos</th>
+              <th>Oportunidades</th>
+              <th>Asociados</th>
+              <th>Lead → Asociado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Agencias</td>
+              <td>180</td>
+              <td>110</td>
+              <td>70</td>
+              <td>35</td>
+              <td>19%</td>
+            </tr>
+            <tr>
+              <td>Web</td>
+              <td>90</td>
+              <td>45</td>
+              <td>25</td>
+              <td>12</td>
+              <td>13%</td>
+            </tr>
+            <tr>
+              <td>Ferias</td>
+              <td>50</td>
+              <td>35</td>
+              <td>20</td>
+              <td>15</td>
+              <td>30%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="text-center">
+  <div class="container">
+    <span>CRM COOSANJER – Mockup Reportes</span>
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
